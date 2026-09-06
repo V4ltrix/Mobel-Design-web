@@ -118,7 +118,7 @@ h2{
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(248, 168, 68, 0.9);
     border: 1px solid rgba(248, 168, 68, 0.6);
     border-radius: 50px;
     padding: 6px 14px;
