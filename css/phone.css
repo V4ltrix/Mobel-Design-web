@@ -1,0 +1,255 @@
+@media (max-width: 430px) {
+                                /* ============================================
+                                   СКРІН 1 — HERO (мобільна версія)
+                                   Фото на весь екран, градієнт для читабельності,
+                                   текст зліва, промо-банер притиснутий донизу
+                                   ============================================ */
+.block {
+    position: relative;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.block::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: radial-gradient(
+        80% 42% at 50% 20%,
+        rgba(20, 14, 10, 0.55) 0%,
+        rgba(20, 14, 10, 0.22) 55%,
+        rgba(20, 14, 10, 0) 80%
+    );
+}
+
+.block_content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 72px 24px 32px;
+}
+
+.block_sofa_mobile {
+    display: block;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.95);
+    z-index: -1;
+}
+
+h1{
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 40px;
+    text-shadow: 0px 2px 14px rgba(0, 0, 0, 0.5);
+}
+
+h2{
+    color: #fffdfc;
+    padding: 10px 0 0;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.45);
+}
+
+.block_bg {
+    display: none;
+}
+
+    .advantages {
+        display: none;
+    }
+
+    .btn {
+        margin-top: 30px;
+        width: 180px;
+        height: 42px;
+    }
+
+    .mobile_rating {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.avatar_group {
+    display: flex;
+}
+
+.avatar_circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.35);
+    object-fit: cover;
+}
+
+.avatar_circle:not(:first-child) {
+    margin-left: -10px;
+}
+
+.rating_text {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.35;
+    max-width: 190px;
+    text-align: left;
+    color: #ffffff;
+    text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* / Бейдж знижки — компактний, внизу по центру */
+.mobile_promo {
+    display: block;
+    position: absolute;
+    bottom: 82px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    background: rgba(248, 168, 68, 0.9);
+    border: 1px solid rgba(248, 168, 68, 0.6);
+    border-radius: 50px;
+    padding: 6px 14px;
+}
+
+.promo_text {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #252525;
+    white-space: nowrap;
+}
+
+    .btn_about {
+        width: 160px;
+        height: 42px;
+        line-height: 42px;
+        font-size: 14px;
+    }
+
+    .gallery_filters {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 0 20px;
+    }
+
+    .filter_btn {
+        width: 100%;
+        padding: 0;
+        font-size: 13px;
+    }
+
+    .footer_title {
+        font-size: 28px;
+        text-shadow: 0px 0px 4px #000000;
+        margin-bottom: 4px;
+    }
+
+    .tips_sub {
+        padding: 0 20px;
+        font-size: 13px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    .tips_title {
+        font-size: 24px;
+        padding: 0 10px;
+    }
+
+    .footer_sub {
+        padding-bottom: 8px;
+    }
+
+    .products_grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product_card {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .product_img {
+        height: 280px;
+    }
+
+    .product_btn {
+        width: 48px;
+        height: 48px;
+    }
+
+    .product_btn img {
+        width: 26px;
+    }
+
+    .product_name {
+        font-size: 18px;
+    }
+
+    .product_material {
+        font-size: 15px;
+    }
+
+    .product_price {
+        font-size: 22px;
+    }
+
+.tips_img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+}
+
+.tipsSwiper .swiper-slide {
+    height: auto !important;
+}
+
+    .tips_date {
+        margin-left: 5px;
+        margin-bottom: 10px;
+        padding: 0 10px;
+    }
+
+    .btn_more {
+        width: 160px;
+        height: 42px;
+        line-height: 38px;
+        font-size: 13px;
+    }
+
+    .footer_title{
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .footer_btn {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+
+    .footer_input {
+        width: 220px;
+        max-width: 220px;
+    }
+
+    .social_icon img {
+        width: 28px;
+        height: 25px;
+    }
+}

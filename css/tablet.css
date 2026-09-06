@@ -1,0 +1,454 @@
+@media (max-width: 1220px) {
+ 
+    .about_section,
+    .gallery_section,
+    .products_section,
+    .tips_section,
+    .footer_top {
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+ 
+    .container {
+        padding: 0 10px 0 10px;
+        box-sizing: border-box;
+    }
+
+    .advantages {
+    width: 100%;
+    left: 0;
+    box-sizing: border-box;
+    }
+
+    .footer_title {
+        font-size: 32px;
+    }
+
+    .footer_sub {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 860px) {
+    #scrollTop {
+        display: none;
+    }
+
+        .about_img img {
+        width: 100%;
+        height: auto;
+        max-width: 604px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+
+    body {
+         overflow-x: hidden; 
+    }
+
+                                    /* --- ХЕДЕР --- */
+    .header {
+        height: 60px;
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .header .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .header_top {
+        position: relative;
+        height: 60px;
+        width: 100%;
+    }
+
+    .social_item { display: none; }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 6px;
+        z-index: 201;
+    }
+
+    .burger span {
+        display: block;
+        width: 26px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 2px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .burger.open span:nth-child(1) { 
+        transform: translateY(9px) rotate(45deg); 
+    }
+
+    .burger.open span:nth-child(2) {
+        opacity: 0; 
+    }
+
+    .burger.open span:nth-child(3) { 
+        transform: translateY(-9px) rotate(-45deg); 
+    }
+
+    .menu {
+        border: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 160px;
+        background-color: rgba(98, 70, 47, 0.98);
+        backdrop-filter: blur(10px);
+        padding: 0;
+        z-index: 200;
+        display: flex;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease, padding 0.4s ease;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+
+    .menu.open { 
+        max-height: 420px; 
+        padding: 8px 0; 
+    }
+
+    .menu a {
+        padding: 13px 28px;
+        font-size: 15px;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .menu a:last-child { 
+        border-bottom: none; 
+    }
+
+    .menu a:hover { 
+        background-color: rgba(248,168,68,0.15); 
+    }
+
+                                /* Допоміжна стрілка скролу вверх */
+    #scrollTop { display: none !important; }
+
+                                        /* СКРІН 1 */
+    .block {
+        width: 100%;
+        max-width: 100%;
+        height: 480px;
+    }
+
+    h1 { 
+        font-size: 30px;
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px; 
+    }
+
+    h2 { font-size: 18px; 
+        padding-left: 20px; 
+        padding-right: 20px; 
+    }
+
+    .btn { 
+        font-size: 18px; 
+        padding: 9px 28px; 
+    }
+
+    .advantages { 
+        height: 90px; 
+        justify-content: space-around; 
+    }
+
+    .advantage { 
+        margin-bottom: 50px; 
+    }
+
+    .advantage img { 
+        width: 28px; 
+    }
+
+    .advantage span { 
+        font-size: 11px; 
+    }
+
+
+                                /* СКРІН 2 */
+    .about_section { 
+        max-width: 100%; 
+        width: 100%; 
+        padding: 30px 20px; 
+    }
+    
+    .about_inner { 
+        margin-left: 0; 
+        flex-direction: column; 
+        gap: 20px; 
+        align-items: center; 
+    }
+
+    .about_text { 
+        max-width: 100%; 
+        align-items: center; 
+    }
+
+    .about_title { 
+        font-size: 22px; 
+        text-align: center; 
+    }
+
+    .about_sub { 
+        font-size: 14px; 
+    }
+
+    .btn_about {
+        width: 160px;
+        height: 44px;
+        line-height: 44px;
+        font-size: 14px;
+    }
+
+    .about_img img {
+        width: 100%; 
+        max-width: 100%; 
+        height: 240px; 
+    }
+
+                                    /* СКРІН 3 */
+    .gallery_section { 
+        max-width: 100%; 
+        width: 100%; 
+        padding: 24px 0 10px; 
+    }
+
+    .gallery_title { 
+        font-size: 22px; 
+        padding: 0 20px; 
+    }
+
+    .gallery_sub { 
+        font-size: 13px; 
+        padding: 0 20px; 
+    }
+
+    .gallery_filters { 
+        flex-wrap: wrap; 
+        gap: 8px; 
+        padding: 0 20px; 
+        justify-content: center; 
+    }
+    
+ .filter_btn { 
+        width: 130px; 
+        height: 36px; 
+        font-size: 13px; 
+    }
+
+    .swiper-slide { 
+        width: 180px !important; 
+        height: 250px !important; 
+    }
+
+    .swiper-slide-active { 
+        width: 200px !important; 
+        height: 290px !important; 
+    }
+
+                                    /* СКРІН 4 */
+    .product_card { 
+        width: calc(50% - 14px); 
+        max-width: 100%; 
+    }
+
+    .product_img { 
+        height: 160px; 
+    }
+
+    .product_material { 
+        font-size: 12px; 
+    }
+
+    .product_name { 
+        font-size: 14px; 
+    }
+
+    .product_price { 
+        font-size: 16px; 
+    }
+
+    .product_btn{
+        width: 45px;
+        height: 45px;
+    }
+
+    .products_grid { 
+        gap: 14px; 
+        justify-content: center; 
+    }
+
+    .products_section { 
+        max-width: 100%; 
+        width: 100%; 
+        padding: 30px 20px 40px; 
+    }
+
+    .products_sub { 
+        font-size: 13px; 
+        margin-bottom: 30px; 
+    }
+
+    .products_title { 
+        font-size: 20px; 
+    }
+
+                                        /* СКРІН 5 */
+    .tips_img { 
+        width: 100%; 
+        height: 170px; 
+    }
+
+    .tips_name { 
+        font-size: 13px; 
+    }
+
+    .tips_section { 
+        max-width: 100%; 
+        width: 100%; 
+        padding: 16px 0 10px; 
+    }
+
+    .tips_sub { 
+        font-size: 13px; 
+        padding: 0 20px; 
+    }
+
+    .tips_title { 
+        font-size: 22px; 
+        padding: 0 20px; 
+    }
+
+    .tipsSwiper { 
+        padding: 16px 24px 10px !important; 
+    }
+
+    .tipsSwiper .swiper-slide { 
+        width: 260px !important; 
+        height: 290px !important; 
+    }
+
+                                        /* ФУТЕР */
+    .footer_btn { 
+        font-size: 16px; 
+        padding: 10px 24px; 
+    }
+
+    .footer_input { 
+        width: 100%; 
+        max-width: 320px; 
+    }
+
+    .footer_sub { 
+        font-size: 13px; 
+        margin-top: -8px; 
+        margin-bottom: 8px; 
+    }
+
+    .footer_title { 
+        margin-top: 30px;
+        color: #eeeeee;
+        text-shadow: 0px 0px 4px #000000;
+        font-size: 24px; 
+        line-height: 1.3; 
+    }
+
+    .footer_top { 
+        max-width: 100%; 
+        width: 100%; 
+        height: auto; 
+        padding: 40px 20px; 
+        gap: 12px; 
+    }
+
+    .footer_bottom { 
+        padding: 24px 20px; 
+    }
+
+    .footer_col:nth-child(1) { 
+        display: flex; 
+        flex-direction: column; 
+        gap: 6px; 
+        flex: 1; 
+    }
+
+    .footer_col:nth-child(2),
+    .footer_col:nth-child(3),
+    .footer_col:nth-child(4) { 
+        display: none; 
+    }
+
+    .footer_col:nth-child(5) { 
+        display: flex; 
+        flex-direction: column; 
+        align-items: flex-end; 
+        gap: 6px; 
+    }
+
+    .footer_col_title { 
+        font-size: 13px; 
+        margin-bottom: 4px; 
+    }
+
+    .footer_cols {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        gap: 16px;
+    }
+
+    .footer_contact { 
+        font-size: 12px;
+    }
+
+    .footer_copy { 
+        font-size: 10px; 
+        padding: 12px 20px; 
+    }
+
+    .footer_logo { 
+        width: 70px; 
+    }
+
+    .footer_socials { 
+        display: flex; 
+        gap: 10px; 
+        margin-top: 6px; 
+    }
+
+    .footer_sub_btn { 
+        display: none; 
+    }
+
+    .footer_sub_input { 
+        display: none; 
+    }
+
+    .social_icon img { 
+        width: 28px; 
+        height: 28px; 
+    }
+}
