@@ -1,3 +1,12 @@
+                                    // AOS — ініціалізація
+AOS.init({
+    duration: 700,            // тривалість анімації в мс
+    easing: 'ease-out-cubic', // тип згладжування (можна: 'ease', 'ease-in', 'ease-out', 'linear', 'ease-in-out-back' тощо)
+    once: true,                // true = анімація спрацьовує лише 1 раз; false = повторюється при кожному в'їзді у viewport
+    mirror: false,             // якщо once: false — чи програвати анімацію "назад" при скролі вгору
+    offset: 80,                 // за скільки пікселів ДО появи елемента в зоні видимості спрацює анімація
+});
+
 window.addEventListener('load', () => {
 
     // SWIPER 1
@@ -23,12 +32,6 @@ window.addEventListener('load', () => {
         autoplay: { delay: 5000, disableOnInteraction: false },
         pagination: { el: '.tipsSwiper .swiper-pagination', clickable: false },
     });
-
-    // АНІМАЦІЯ ПОЯВИ СЕКЦІЙ
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.15 });
-    document.querySelectorAll('section, .footer_top').forEach(el => observer.observe(el));
 
     // SCROLL TO TOP
     const scrollBtn = document.createElement('button');
@@ -66,4 +69,59 @@ window.addEventListener('load', () => {
     }, { threshold: 0.3, rootMargin: '-50px 0px -50% 0px' });
     navSections.forEach(s => navObserver.observe(s));
 
+});
+
+                                    // прогрес бар
+window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = (scrollTop / docHeight) * 100;
+    document.getElementById('progressBar').style.width = progress + '%';
+});
+
+                                // анімація цифр
+
+function animateCounter(el) {
+    const target = parseInt(el.dataset.target);
+    let current = 0;
+    const step = target / 60;
+    const timer = setInterval(() => {
+        current += step;
+        if (current >= target) {
+            el.textContent = target.toLocaleString();
+            clearInterval(timer);
+        } else {
+            el.textContent = Math.floor(current).toLocaleString();
+        }
+    }, 20);
+}
+
+const counterObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            counterObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+
+
+
+                                // прикріплений хедер
+$(function() {
+    let top = $("#home");
+    let topH = top.height();
+    let header = $("#header");
+
+    $(window).on("scroll load", function() {
+        let scrollPos = $(this).scrollTop();
+
+        if (scrollPos > topH) {
+            header.addClass("fixed");
+        } else {
+            header.removeClass("fixed");
+        }
+    });
 });
