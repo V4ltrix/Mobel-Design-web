@@ -4,36 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobel design website</title>
-    <link rel="icon" type="image/png" href="images/Logo.png">
+    <link rel="icon" href="Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/phone.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
+                                    <!-- прогрес бар -->
+    <div id="progressBar"></div>
                                         <!-- ХЕДЕР -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header_top">
-                <a href="" class="logo"><img src="images/logo.svg"></a>
-                <nav class="menu">
-                    <a href="#home"     class="nav_link">Головна</a>
-                    <a href="#about"    class="nav_link">Про нас</a>
-                    <a href="#gallery"  class="nav_link">Галерея</a>
-                    <a href="#products" class="nav_link">Продукти</a>
-                    <a href="#tips"     class="nav_link">Поради</a>
-                    <a href="#footer"   class="nav_link">Контакти</a>
-                </nav>
+<a href="" class="logo" data-aos="fade-down" data-aos-duration="600"><img src="images/logo.svg"></a>
+                    <nav class="menu">
+                        <a href="#home"     class="nav_link" data-aos="fade-down" data-aos-delay="100">Головна</a>
+                        <a href="#about"    class="nav_link" data-aos="fade-down" data-aos-delay="150">Про нас</a>
+                        <a href="#gallery"  class="nav_link" data-aos="fade-down" data-aos-delay="200">Галерея</a>
+                        <a href="#products" class="nav_link" data-aos="fade-down" data-aos-delay="250">Продукти</a>
+                        <a href="#tips"     class="nav_link" data-aos="fade-down" data-aos-delay="300">Поради</a>
+                        <a href="#footer"   class="nav_link" data-aos="fade-down" data-aos-delay="350">Контакти</a>
+                    </nav>
                 <div class="social_item">
-                    <a href="" class="knopki"><img src="images/Search.svg"></a>
-                    <a href="" class="knopki"><img src="images/Basket_alt_3.svg"></a>
-                    <a href="" class="knopki"><img src="images/Favorite_light.svg"></a>
-                    <a href="" class="knopki"><img src="images/User_alt.svg"></a>
+                    <a href="" class="knopki" data-aos="fade-down" data-aos-delay="400"><img src="images/Search.svg"></a>
+                    <a href="" class="knopki" data-aos="fade-down" data-aos-delay="450"><img src="images/Basket_alt_3.svg"></a>
+                    <a href="" class="knopki" data-aos="fade-down" data-aos-delay="500"><img src="images/Favorite_light.svg"></a>
+                    <a href="" class="knopki" data-aos="fade-down" data-aos-delay="550"><img src="images/User_alt.svg"></a>
                 </div>
-                <button class="burger" id="burger">
+                <button class="burger" id="burger" data-aos="fade-down" data-aos-delay="100">
                     <span></span>
                     <span></span>
                     <span></span>
+                </button>
             </div>
         </div>
     </header>
@@ -43,37 +49,37 @@
         <img src="images/sofa remake – копія.png" alt="" class="block_bg">
         <img src="images/SofaMobile.png" alt="" class="block_sofa_mobile">
         <div class="block_content">
-            <h1>Створіть дизайн меблів</h1>
-            <h2>для найвищих вимог</h2>
-            <button class="btn">Почати</button>
- <div class="mobile_rating">
+            <h1 data-aos="fade-up">Створіть дизайн меблів</h1>
+            <h2 data-aos="fade-up" data-aos-delay="100">для найвищих вимог</h2>
+            <button class="btn" data-aos="fade-up" data-aos-delay="200">Почати</button>
+ <div class="mobile_rating" data-aos="fade-up" data-aos-delay="300">
 <div class="avatar_group">
     <img src="images/vidguk1.png" alt="" class="avatar_circle">
     <img src="images/vidguk2.png" alt="" class="avatar_circle">
     <img src="images/vidguk3.png" alt="" class="avatar_circle">
 </div>
-    <span class="rating_text">Понад 2,000 клієнтів створили свій ідеальний дім</span>
+    <span class="rating_text">Понад <span class="counter" data-target="2000">0</span>+ клієнтів створили свій ідеальний дім</span>
 </div>
 
                                     <!-- Банер знижки для нових клієнтів -->
 <!-- Бейдж знижки -->
-<div class="mobile_promo">
+<div class="mobile_promo" data-aos="fade-up" data-aos-delay="350">
     <span class="promo_text">−10% на перше замовлення</span>
 </div>
             <div class="advantages">
-                <div class="advantage">
+                <div class="advantage" data-aos="fade-up" data-aos-delay="0">
                     <img src="images/status.svg" alt="">
                     <span>Якісний продукт</span>
                 </div>
-                <div class="advantage">
+                <div class="advantage" data-aos="fade-up" data-aos-delay="80">
                     <img src="images/car.svg" alt="">
                     <span>Безкоштовна доставка</span>
                 </div>
-                <div class="advantage">
+                <div class="advantage" data-aos="fade-up" data-aos-delay="160">
                     <img src="images/sheet.svg" alt="">
                     <span>Консультації</span>
                 </div>
-                <div class="advantage">
+                <div class="advantage" data-aos="fade-up" data-aos-delay="240">
                     <img src="images/percent.svg" alt="">
                     <span>Ексклюзивні знижки</span>
                 </div>
@@ -85,12 +91,12 @@
     <section class="about_section" id="about">
         <div class="container">
             <div class="about_inner">
-                <div class="about_text">
+                <div class="about_text" data-aos="fade-up">
                     <h3 class="about_title">Створіть свій ідеальний дім з відповідними меблями.</h3>
                     <p class="tips_sub">Тут ви знайдете корисні поради та рекомендації щодо облаштування, догляду та оптимального використання ваших меблів.</p>
                     <button class="btn_about">Більше оголошень</button>
                 </div>
-                <div class="about_img">
+                <div class="about_img" data-aos="fade-up" data-aos-delay="150">
                     <img src="images/screen2.png" alt="Інтер'єр кімнати">
                 </div>
             </div>
@@ -101,13 +107,13 @@
                                              
     <section class="gallery_section" id="gallery">
         <div class="container">
-            <h2 class="gallery_title">Понад 450 натхнень для гарних кімнат</h2>
-            <p class="gallery_sub">натхненний сучасними тенденціями - спроектуйте свої кімнати<br><strong>повністю на свій смак.</strong></p>
+            <h2 class="gallery_title" data-aos="fade-up">Понад 450 натхнень для гарних кімнат</h2>
+            <p class="gallery_sub" data-aos="fade-up" data-aos-delay="100">натхненний сучасними тенденціями - спроектуйте свої кімнати<br><strong>повністю на свій смак.</strong></p>
             <div class="gallery_filters">
-                <button class="filter_btn active">Стільці</button>
-                <button class="filter_btn">Диван</button>
-                <button class="filter_btn">Кухня</button>
-                <button class="filter_btn">Ліжко</button>
+                <button class="filter_btn active" data-aos="fade-up" data-aos-delay="0">Стільці</button>
+                <button class="filter_btn" data-aos="fade-up" data-aos-delay="80">Диван</button>
+                <button class="filter_btn" data-aos="fade-up" data-aos-delay="160">Кухня</button>
+                <button class="filter_btn" data-aos="fade-up" data-aos-delay="240">Ліжко</button>
             </div>
         </div>
         <div class="swiper mySwiper">
@@ -128,10 +134,10 @@
                                             <!-- СКРІН 4 -->
      <section class="products_section" id="products">
         <div class="container">
-            <h2 class="products_title">Наші продукти</h2>
-            <p class="products_sub">Відкривайте для себе наш різноманітний вибір стильних та функціональних меблів для будь-якої житлової зони</p>
+            <h2 class="products_title" data-aos="fade-up">Наші продукти</h2>
+            <p class="products_sub" data-aos="fade-up" data-aos-delay="100">Відкривайте для себе наш різноманітний вибір стильних та функціональних меблів для будь-якої житлової зони</p>
             <div class="products_grid">
-                <div class="product_card">
+                <div class="product_card" data-aos="fade-up" data-aos-delay="0">
                     <img src="images/image 22.png" alt="" class="product_img">
                     <p class="product_name">Диван Vello</p>
                     <p class="product_material">матеріал: дерево</p>
@@ -140,7 +146,7 @@
                         <button class="product_btn"><img src="images/Basket_alt_3.svg"></button>
                     </div>
                 </div>
-                <div class="product_card">
+                <div class="product_card" data-aos="fade-up" data-aos-delay="80">
                     <img src="images/image 24.png" alt="" class="product_img">
                     <p class="product_name">Ліжко Alva</p>
                     <p class="product_material">матеріал: дерево</p>
@@ -149,7 +155,7 @@
                         <button class="product_btn"><img src="images/Basket_alt_3.svg"></button>
                     </div>
                 </div>
-                <div class="product_card">
+                <div class="product_card" data-aos="fade-up" data-aos-delay="160">
                     <img src="images/image 25.png" alt="" class="product_img">
                     <p class="product_name">Крісло Lina</p>
                     <p class="product_material">матеріал: дерево</p>
@@ -158,7 +164,7 @@
                         <button class="product_btn"><img src="images/Basket_alt_3.svg"></button>
                     </div>
                 </div>
-                <div class="product_card">
+                <div class="product_card" data-aos="fade-up" data-aos-delay="240">
                     <img src="images/image 26.png" alt="" class="product_img">
                     <p class="product_name">Крісло Lindberg</p>
                     <p class="product_material">матеріал: дерево</p>
@@ -167,7 +173,7 @@
                         <button class="product_btn"><img src="images/Basket_alt_3.svg"></button>
                     </div>
                 </div>
-                <div class="product_card">
+                <div class="product_card" data-aos="fade-up" data-aos-delay="320">
                     <img src="images/image 27.png" alt="" class="product_img">
                     <p class="product_name">Ліжко Mirea</p>
                     <p class="product_material">матеріал: дерево</p>
@@ -176,7 +182,7 @@
                         <button class="product_btn"><img src="images/Basket_alt_3.svg"></button>
                     </div>
                 </div>
-                <div class="product_card">
+                <div class="product_card" data-aos="fade-up" data-aos-delay="0">
                     <img src="images/image 52.png" alt="" class="product_img">
                     <p class="product_name">Дубовий диван</p>
                     <p class="product_material">матеріал: дерево</p>
@@ -185,7 +191,7 @@
                         <button class="product_btn"><img src="images/Basket_alt_3.svg"></button>
                     </div>
                 </div>
-                <div class="product_card">
+                <div class="product_card" data-aos="fade-up" data-aos-delay="80">
                     <img src="images/image 56.png" alt="" class="product_img">
                     <p class="product_name">Крісло Lindberg</p>
                     <p class="product_material">матеріал: дерево</p>
@@ -194,7 +200,7 @@
                         <button class="product_btn"><img src="images/Basket_alt_3.svg"></button>
                     </div>
                 </div>
-                <div class="product_card">
+                <div class="product_card" data-aos="fade-up" data-aos-delay="160">
                     <img src="images/image 61.png" alt="" class="product_img">
                     <p class="product_name">Диван Mira</p>
                     <p class="product_material">матеріал: дерево</p>
@@ -203,7 +209,7 @@
                         <button class="product_btn"><img src="images/Basket_alt_3.svg"></button>
                     </div>
                 </div>
-                <div class="product_card">
+                <div class="product_card" data-aos="fade-up" data-aos-delay="240">
                     <img src="images/image 65.png" alt="" class="product_img">
                     <p class="product_name">Кухня Alpina</p>
                     <p class="product_material">матеріал: ДВП</p>
@@ -212,7 +218,7 @@
                         <button class="product_btn"><img src="images/Basket_alt_3.svg"></button>
                     </div>
                 </div>
-                <div class="product_card">
+                <div class="product_card" data-aos="fade-up" data-aos-delay="320">
                     <img src="images/image 69.png" alt="" class="product_img">
                     <p class="product_name">Диван Elano</p>
                     <p class="product_material">матеріал: дерево</p>
@@ -231,8 +237,8 @@
                                             <!-- <-- СКРІН 5 -->
     <section class="tips_section" id="tips">
         <div class="container">
-            <h2 class="tips_title">Поради та підсказки</h2>
-            <p class="tips_sub">Тут ви знайдете корисні поради та рекомендації щодо облаштування,<br>догляду та оптимального використання ваших меблів.</p>
+            <h2 class="tips_title" data-aos="fade-up">Поради та підсказки</h2>
+            <p class="tips_sub" data-aos="fade-up" data-aos-delay="100">Тут ви знайдете корисні поради та рекомендації щодо облаштування,<br>догляду та оптимального використання ваших меблів.</p>
         </div>
         <div class="swiper tipsSwiper">
             <div class="swiper-wrapper">
@@ -276,24 +282,24 @@
         <div class="footer_top">
             <img src="images/backg.png" alt="" class="footer_top_bg">
             <div class="footer_top_content">
-                <h2 class="footer_title">Бажаєте індивідуальний дизайн ?</h2>
-                <p class="footer_sub">Ми розробимо його повністю відповідно до ваших побажань</p>
-                <input type="text" class="footer_input" placeholder="Вкажіть свій email...">
-                <input type="text" class="footer_input" placeholder="Вкажіть своє ім'я...">
-                <button class="footer_btn">Надіслати</button>
+                <h2 class="footer_title" data-aos="fade-up">Бажаєте індивідуальний дизайн ?</h2>
+                <p class="footer_sub" data-aos="fade-up" data-aos-delay="100">Ми розробимо його повністю відповідно до ваших побажань</p>
+                <input type="text" class="footer_input" data-aos="fade-up" data-aos-delay="200" placeholder="Вкажіть свій email...">
+                <input type="text" class="footer_input" data-aos="fade-up" data-aos-delay="250" placeholder="Вкажіть своє ім'я...">
+                <button class="footer_btn" data-aos="fade-up" data-aos-delay="300">Надіслати</button>
             </div>
         </div>
         <div class="footer_bottom">
             <div class="container">
                 <div class="footer_cols">
-                    <div class="footer_col">
+                    <div class="footer_col" data-aos="fade-up" data-aos-delay="0">
                         <p class="footer_col_title">Штаб квартира компанії</p>
                         <img src="images/logo.svg" class="footer_logo">
                         <p class="footer_contact">Україна, Київ</p>
                         <p class="footer_contact">+09852421864</p>
                         <p class="footer_contact">www.meblesdesign.ua</p>
                     </div>
-                    <div class="footer_col">
+                    <div class="footer_col" data-aos="fade-up" data-aos-delay="80">
                         <p class="footer_col_title">Меню</p>
                         <span class="footer_link">Про нас</span>
                         <span class="footer_link">Галерея</span>
@@ -301,21 +307,21 @@
                         <span class="footer_link">Поради</span>
                         <span class="footer_link">Контакти</span>
                     </div>
-                    <div class="footer_col">
+                    <div class="footer_col" data-aos="fade-up" data-aos-delay="160">
                         <p class="footer_col_title">Обліковий запис</p>
                         <span class="footer_link">Мій рахунок</span>
                         <span class="footer_link">До каси</span>
                         <span class="footer_link">Мій кошик</span>
                         <span class="footer_link">Каталог</span>
                     </div>
-                    <div class="footer_col">
+                    <div class="footer_col" data-aos="fade-up" data-aos-delay="240">
                         <p class="footer_col_title">Послуги і допомога</p>
                         <span class="footer_link">Обслуговування</span>
                         <span class="footer_link">Фінансування</span>
                         <span class="footer_link">Довідка</span>
                         <span class="footer_link">Вилучення</span>
                     </div>
-                    <div class="footer_col">
+                    <div class="footer_col" data-aos="fade-up" data-aos-delay="320">
                         <p class="footer_col_title">Залишайтесь в курсі</p>
                         <div class="footer_subscribe">
                             <input type="text" class="footer_sub_input" placeholder="Вкажіть свій email...">
