@@ -1,4 +1,9 @@
 @media (max-width: 430px) {
+                                /* ============================================
+                                   СКРІН 1 — HERO (мобільна версія)
+                                   Фото на весь екран, градієнт для читабельності,
+                                   текст зліва, промо-банер притиснутий донизу
+                                   ============================================ */
 .block {
     position: relative;
     height: 100vh;
@@ -105,7 +110,7 @@ h2{
     text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4);
 }
 
-
+/* / Бейдж знижки — компактний, внизу по центру */
 .mobile_promo {
     display: block;
     margin-top: 270px;
@@ -242,5 +247,15 @@ h2{
     .social_icon img {
         width: 28px;
         height: 25px;
+    }
+    .side_panel {
+    width: 100%;
+    max-width: 100%;
+    }
+    .account_modal_inner {
+        width: 340px;
+    }
+    .search_panel_inner {
+        padding: 20px 16px;
     }
 }
