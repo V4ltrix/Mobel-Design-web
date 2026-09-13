@@ -451,4 +451,15 @@
         width: 28px; 
         height: 28px; 
     }
+
+    .side_panel {
+    width: 100%;
+    max-width: 100%;
+    }
+    .account_modal_inner {
+        width: 340px;
+    }
+    .search_panel_inner {
+        padding: 20px 16px;
+    }
 }
