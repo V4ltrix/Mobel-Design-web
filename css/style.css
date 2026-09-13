@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    scroll-behavior: smooth; 
 }
 
 #home, #about, #gallery, #products, #tips, #footer{
@@ -18,6 +17,19 @@ body {
     font-weight: 400;
     background-color: #E3C0A8;
 }
+
+#progressBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: #F8A844;
+    border-radius: 8px;
+    z-index: 1000;
+    transition: width 0.1s ease;
+}
+
 
 .burger {
     display: none;
@@ -40,13 +52,27 @@ body {
                             /* ХЕДЕР */
 
 .header {
-    position: sticky;
-    top: 0;
+    position: relative;
     z-index: 100;
     height: 80px;
     padding-top: 20px;
     background-color: rgba(98, 70, 47);
     backdrop-filter: blur(12px);
+}
+
+.header.fixed {
+    position: sticky;
+    top: 0;
+    animation: slideDown 0.4s ease;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 .header_top {
@@ -731,17 +757,6 @@ h2 {
     text-align: center;
     padding: 14px 0;
     font-size: 10px;
-}
-
-section, .footer_top {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: 1s ease;
-}
-
-section.visible, .footer_top.visible {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 #scrollTop {
