@@ -249,6 +249,7 @@ h2 {
 }
 
 .btn_about {
+    cursor: pointer;
     border: none;
     margin-top: 20px;
     box-shadow: 0px 0px 15px #F8A844;
