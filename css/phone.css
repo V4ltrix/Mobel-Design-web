@@ -1,5 +1,5 @@
 @media (max-width: 430px) {
-
+.block {
     position: relative;
     height: 100vh;
     max-height: 100vh;
