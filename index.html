@@ -30,10 +30,10 @@
                         <a href="#footer"   class="nav_link" data-aos="fade-down" data-aos-delay="350">Контакти</a>
                     </nav>
                 <div class="social_item">
-                    <a href="" class="knopki" data-aos="fade-down" data-aos-delay="400"><img src="images/Search.svg"></a>
-                    <a href="" class="knopki" data-aos="fade-down" data-aos-delay="450"><img src="images/Basket_alt_3.svg"></a>
-                    <a href="" class="knopki" data-aos="fade-down" data-aos-delay="500"><img src="images/Favorite_light.svg"></a>
-                    <a href="" class="knopki" data-aos="fade-down" data-aos-delay="550"><img src="images/User_alt.svg"></a>
+                    <button type="button" class="knopki" id="searchBtn" aria-label="Пошук" data-aos="fade-down" data-aos-delay="400"><img src="images/Search.svg" alt=""></button>
+                    <button type="button" class="knopki" id="cartBtn" aria-label="Кошик" data-aos="fade-down" data-aos-delay="450"><img src="images/Basket_alt_3.svg" alt=""><span class="badge" id="cartBadge">0</span></button>
+                    <button type="button" class="knopki" id="favBtn" aria-label="Обране" data-aos="fade-down" data-aos-delay="500"><img src="images/Favorite_light.svg" alt=""><span class="badge" id="favBadge">0</span></button>
+                    <button type="button" class="knopki" id="userBtn" aria-label="Обліковий запис" data-aos="fade-down" data-aos-delay="550"><img src="images/User_alt.svg" alt=""></button>
                 </div>
                 <button class="burger" id="burger" data-aos="fade-down" data-aos-delay="100">
                     <span></span>
@@ -137,7 +137,8 @@
             <h2 class="products_title" data-aos="fade-up">Наші продукти</h2>
             <p class="products_sub" data-aos="fade-up" data-aos-delay="100">Відкривайте для себе наш різноманітний вибір стильних та функціональних меблів для будь-якої житлової зони</p>
             <div class="products_grid">
-                <div class="product_card" data-aos="fade-up" data-aos-delay="0">
+                <div class="product_card" data-product-id="p1" data-aos="fade-up" data-aos-delay="0">
+                    <button class="fav_toggle" aria-label="Додати в обране"><img src="images/Favorite_light.svg" alt=""></button>
                     <img src="images/image 22.png" alt="" class="product_img">
                     <p class="product_name">Диван Vello</p>
                     <p class="product_material">матеріал: дерево</p>
@@ -146,7 +147,8 @@
                         <button class="product_btn"><img src="images/Basket_alt_3.svg"></button>
                     </div>
                 </div>
-                <div class="product_card" data-aos="fade-up" data-aos-delay="80">
+                <div class="product_card" data-product-id="p2" data-aos="fade-up" data-aos-delay="80">
+                    <button class="fav_toggle" aria-label="Додати в обране"><img src="images/Favorite_light.svg" alt=""></button>
                     <img src="images/image 24.png" alt="" class="product_img">
                     <p class="product_name">Ліжко Alva</p>
                     <p class="product_material">матеріал: дерево</p>
@@ -155,7 +157,8 @@
                         <button class="product_btn"><img src="images/Basket_alt_3.svg"></button>
                     </div>
                 </div>
-                <div class="product_card" data-aos="fade-up" data-aos-delay="160">
+                <div class="product_card" data-product-id="p3" data-aos="fade-up" data-aos-delay="160">
+                    <button class="fav_toggle" aria-label="Додати в обране"><img src="images/Favorite_light.svg" alt=""></button>
                     <img src="images/image 25.png" alt="" class="product_img">
                     <p class="product_name">Крісло Lina</p>
                     <p class="product_material">матеріал: дерево</p>
@@ -164,7 +167,8 @@
                         <button class="product_btn"><img src="images/Basket_alt_3.svg"></button>
                     </div>
                 </div>
-                <div class="product_card" data-aos="fade-up" data-aos-delay="240">
+                <div class="product_card" data-product-id="p4" data-aos="fade-up" data-aos-delay="240">
+                    <button class="fav_toggle" aria-label="Додати в обране"><img src="images/Favorite_light.svg" alt=""></button>
                     <img src="images/image 26.png" alt="" class="product_img">
                     <p class="product_name">Крісло Lindberg</p>
                     <p class="product_material">матеріал: дерево</p>
@@ -173,7 +177,8 @@
                         <button class="product_btn"><img src="images/Basket_alt_3.svg"></button>
                     </div>
                 </div>
-                <div class="product_card" data-aos="fade-up" data-aos-delay="320">
+                <div class="product_card" data-product-id="p5" data-aos="fade-up" data-aos-delay="320">
+                    <button class="fav_toggle" aria-label="Додати в обране"><img src="images/Favorite_light.svg" alt=""></button>
                     <img src="images/image 27.png" alt="" class="product_img">
                     <p class="product_name">Ліжко Mirea</p>
                     <p class="product_material">матеріал: дерево</p>
@@ -182,7 +187,8 @@
                         <button class="product_btn"><img src="images/Basket_alt_3.svg"></button>
                     </div>
                 </div>
-                <div class="product_card" data-aos="fade-up" data-aos-delay="0">
+                <div class="product_card" data-product-id="p6" data-aos="fade-up" data-aos-delay="0">
+                    <button class="fav_toggle" aria-label="Додати в обране"><img src="images/Favorite_light.svg" alt=""></button>
                     <img src="images/image 52.png" alt="" class="product_img">
                     <p class="product_name">Дубовий диван</p>
                     <p class="product_material">матеріал: дерево</p>
@@ -191,7 +197,8 @@
                         <button class="product_btn"><img src="images/Basket_alt_3.svg"></button>
                     </div>
                 </div>
-                <div class="product_card" data-aos="fade-up" data-aos-delay="80">
+                <div class="product_card" data-product-id="p7" data-aos="fade-up" data-aos-delay="80">
+                    <button class="fav_toggle" aria-label="Додати в обране"><img src="images/Favorite_light.svg" alt=""></button>
                     <img src="images/image 56.png" alt="" class="product_img">
                     <p class="product_name">Крісло Lindberg</p>
                     <p class="product_material">матеріал: дерево</p>
@@ -200,7 +207,8 @@
                         <button class="product_btn"><img src="images/Basket_alt_3.svg"></button>
                     </div>
                 </div>
-                <div class="product_card" data-aos="fade-up" data-aos-delay="160">
+                <div class="product_card" data-product-id="p8" data-aos="fade-up" data-aos-delay="160">
+                    <button class="fav_toggle" aria-label="Додати в обране"><img src="images/Favorite_light.svg" alt=""></button>
                     <img src="images/image 61.png" alt="" class="product_img">
                     <p class="product_name">Диван Mira</p>
                     <p class="product_material">матеріал: дерево</p>
@@ -209,7 +217,8 @@
                         <button class="product_btn"><img src="images/Basket_alt_3.svg"></button>
                     </div>
                 </div>
-                <div class="product_card" data-aos="fade-up" data-aos-delay="240">
+                <div class="product_card" data-product-id="p9" data-aos="fade-up" data-aos-delay="240">
+                    <button class="fav_toggle" aria-label="Додати в обране"><img src="images/Favorite_light.svg" alt=""></button>
                     <img src="images/image 65.png" alt="" class="product_img">
                     <p class="product_name">Кухня Alpina</p>
                     <p class="product_material">матеріал: ДВП</p>
@@ -218,7 +227,8 @@
                         <button class="product_btn"><img src="images/Basket_alt_3.svg"></button>
                     </div>
                 </div>
-                <div class="product_card" data-aos="fade-up" data-aos-delay="320">
+                <div class="product_card" data-product-id="p10" data-aos="fade-up" data-aos-delay="320">
+                    <button class="fav_toggle" aria-label="Додати в обране"><img src="images/Favorite_light.svg" alt=""></button>
                     <img src="images/image 69.png" alt="" class="product_img">
                     <p class="product_name">Диван Elano</p>
                     <p class="product_material">матеріал: дерево</p>
@@ -340,6 +350,47 @@
     </footer>
                                          <!-- Авторські права -->
 <div class="footer_copy">© 2025-2026 Mobel design. Створено Климосюком Володимиром ©</div>
+
+                                        <!-- ОВЕРЛЕЙ -->
+    <div class="overlay" id="overlay"></div>
+
+                                        <!-- ПАНЕЛЬ ПОШУКУ -->
+    <div class="search_panel" id="searchPanel">
+        <div class="search_panel_inner">
+            <img src="images/Search.svg" class="search_icon" alt="">
+            <input type="text" id="searchInput" class="search_input" placeholder="Що шукаєте? Диван, ліжко, крісло...">
+            <button class="search_close" id="searchClose" aria-label="Закрити пошук">&times;</button>
+        </div>
+        <div class="search_results" id="searchResults"></div>
+    </div>
+
+                                        <!-- ПАНЕЛЬ КОШИКА -->
+    <aside class="side_panel" id="cartPanel">
+        <div class="side_panel_header">
+            <h3>Кошик</h3>
+            <button class="side_panel_close" id="cartClose" aria-label="Закрити кошик">&times;</button>
+        </div>
+        <div class="side_panel_body" id="cartBody"></div>
+        <div class="side_panel_footer" id="cartFooter"></div>
+    </aside>
+
+                                        <!-- ПАНЕЛЬ ОБРАНОГО -->
+    <aside class="side_panel" id="favPanel">
+        <div class="side_panel_header">
+            <h3>Обране</h3>
+            <button class="side_panel_close" id="favClose" aria-label="Закрити обране">&times;</button>
+        </div>
+        <div class="side_panel_body" id="favBody"></div>
+    </aside>
+
+                                        <!-- МОДАЛКА АКАУНТА -->
+    <div class="account_modal" id="accountModal">
+        <div class="account_modal_inner">
+            <button class="side_panel_close" id="accountClose" aria-label="Закрити">&times;</button>
+            <div id="accountContent"></div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
